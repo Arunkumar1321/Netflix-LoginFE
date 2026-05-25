@@ -1,6 +1,6 @@
 const Footer =()=>{
     return(
-        <div className="w-full h-full bg-black pt-10">
+        <div className="md:w-full h-full bg-black pt-10">
             <h1 className="text-gray-500 text-lg pt-5 ml-5">Questions? Call 000-800-040-1843</h1>
             <div className="w-full h-full bg-black">
                 <ul id="footer_links" className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 items-center justify-center cursor-pointer ">

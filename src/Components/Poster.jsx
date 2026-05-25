@@ -5,7 +5,7 @@ const Poster = ()=>{
     return(
         <div>
           
-        <div className="text-white mt-5 relative w-full h-[700px]">
+        <div className="text-white md:mt-5 relative w-full h-[700px]">
             <Poverlay />
            <img src={Spider} alt="spiderman" className="w-full h-[700px] rounded-lg object-cover"/>
            <div className="absolute top-1/2  left-4  w-fit h-fit z-20">

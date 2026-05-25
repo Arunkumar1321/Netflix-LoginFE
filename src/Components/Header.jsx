@@ -7,7 +7,7 @@ const Header = () => {
         document.getElementById(id).scrollIntoView({ behavior: "smooth" });
     }
     return (
-        <div  className="flex items-center justify-between bg-black sticky top-0 z-50 pb-4">
+        <div  className="md:flex items-center justify-between bg-black sticky top-0 z-50 pb-4">
      <div className="w-40 h-14 mt-4">
         <img src={logo} alt="Netflix Logo" className="w-full h-full object-contain" />
      </div>

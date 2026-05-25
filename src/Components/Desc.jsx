@@ -1,6 +1,6 @@
 const Desc = () => {
     return(
-        <div className="w-full h-full flex gap-8 p-4 bg-black flex-wrap mt-5">
+        <div className="md:w-full h-full flex gap-8 p-4 bg-black flex-wrap mt-5">
 
           
             <div className="  bg-[#18181B] text-white rounded-lg   flex-grow basis-11/12 md:basis-[40%] border border-gray-600  hover:bg-black duration-300">

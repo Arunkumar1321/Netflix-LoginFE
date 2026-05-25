@@ -10,7 +10,7 @@ import T4 from "../asset/T4.jpg";
 
 const Mylist = () => {
     return(
-         <div id="mylist" className="m-5">
+         <div id="mylist" className="md:m-5">
                         <h1 className="text-3xl font-bold text-white ">My List</h1>
                     
                     <div>

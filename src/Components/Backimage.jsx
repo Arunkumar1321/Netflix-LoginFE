@@ -1,6 +1,6 @@
 import bg from "../asset/Netflix_bg.jpg"
 const Backimage = () => {
-    return( <div className="w-screen min-h-screen relative -z-20 overflow-hidden">
+    return( <div className="md:w-full h-full relative -z-20 overflow-hidden">
             <img src={bg} alt="Netflix Background" className="w-full h-full object-cover" />
         </div>)
 }
