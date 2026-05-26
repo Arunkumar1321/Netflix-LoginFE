@@ -1,7 +1,7 @@
 import Logo from "../asset/Netflix_logo.png"
 const Netflixlogo = ()=>{
     return(
-        <div  className="md:w-52 h-28 absolute top-4 left-4 z-50">
+        <div  className="w-full h-[500px] absolute z-8  top-[20%]">
         <img src={Logo} alt="Netflix Logo" className="w-full h-full"/>
         </div>
     )
