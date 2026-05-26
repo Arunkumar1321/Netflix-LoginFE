@@ -1,70 +1,161 @@
-# Getting Started with Create React App
+# 🎬 Netflix UI Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Netflix-inspired full stack web application with a **Login / Signup authentication flow** built using **React**, **Node.js**, and **Express**. Users can register, log in, and access the Netflix-style UI upon successful authentication.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 🔐 **Login & Signup Flow** — User can register a new account and log in with existing credentials
+- ✅ **Authentication Logic** — Frontend sends user data to backend via POST request and receives success or failure response
+- 🔄 **Conditional Routing** — Login success → redirects to Netflix UI, Login failure → redirects back to Signup page to add new user
+- 🎨 **Netflix-style UI** — Clean and responsive Netflix-inspired interface
+- 📱 **Responsive Design** — Styled with Tailwind CSS for all screen sizes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+| Layer | Technology |
+|---|---|
+| Frontend | React JS |
+| Styling | Tailwind CSS |
+| Backend | Node.js, Express |
+| Data Storage | In-memory (server-side array) |
+| API Method | POST (REST) |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+netflix-ui-clone/
+├── client/                  # React frontend
+│   ├── src/
+│   │   ├── components/      # Login, Signup, Netflix UI components
+│   │   ├── App.jsx          # Route logic (login → UI or signup)
+│   │   └── main.jsx
+│   └── public/
+├── server/                  # Node.js + Express backend
+│   └── index.js             # POST routes for login & signup
+├── package.json
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔁 Authentication Flow
 
-### `npm run eject`
+```
+User visits app
+      │
+      ▼
+  Login Page
+      │
+  Enter credentials
+      │
+  POST /api/login ──► Backend checks in-memory users
+      │
+  ┌───┴───┐
+  │       │
+ TRUE   FALSE
+  │       │
+  ▼       ▼
+Netflix  Signup Page
+  UI    (Add new user)
+              │
+         POST /api/signup
+              │
+         User added to memory
+              │
+         Redirect to Login
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🌐 API Endpoints
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/login` | Validates user credentials, returns true or false |
+| POST | `/api/signup` | Registers a new user into in-memory storage |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## ⚙️ Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Node.js v18+
+- npm or yarn
 
-### Code Splitting
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/netflix-ui-clone.git
+   cd netflix-ui-clone
+   ```
 
-### Analyzing the Bundle Size
+2. **Install server dependencies**
+   ```bash
+   cd server
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Install client dependencies**
+   ```bash
+   cd ../client
+   npm install
+   ```
 
-### Making a Progressive Web App
+4. **Run the backend server**
+   ```bash
+   cd server
+   node index.js
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+5. **Run the React frontend**
+   ```bash
+   cd client
+   npm run dev
+   ```
 
-### Advanced Configuration
+6. Open your browser at `http://localhost:5173`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📸 Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+| Login Page | Signup Page | Netflix UI |
+|---|---|---|
+| ![Login](./assets/login.png) | ![Signup](./assets/signup.png) | ![UI](./assets/netflix-ui.png) |
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ⚠️ Note
+
+> This project currently uses **in-memory storage** for user data, which means registered users will reset when the server restarts. MongoDB integration is planned as the next upgrade.
+
+---
+
+## 🔮 Upcoming Improvements
+
+- [ ] Connect MongoDB to persist user data
+- [ ] Add JWT-based session management
+- [ ] Add protected routes on the frontend
+- [ ] Improve Netflix UI with more sections and content
+
+---
+
+## 🙋‍♂️ Author
+
+**Arun**
+- GitHub: [@your-username](https://github.com/Arunkumar1321)
+- LinkedIn: [your-linkedin](https://linkedin.com/in/arun-kumar-1325d)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
