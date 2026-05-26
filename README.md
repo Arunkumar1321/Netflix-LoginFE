@@ -129,7 +129,7 @@ Netflix  Signup Page
 
 | Login Page | Signup Page | Netflix UI |
 |---|---|---|
-| ![Login](./src/asset/Preview1.png) | ![Signup](.src/asset/Preview 2.png) | ![UI](./src/asset/Preview 3.png) |
+| ![Login](./src/asset/Preview1.png) | ![Signup](.src/asset/Preview 2.png) | ![UI](.src/asset/Preview 3.png) |
 
 ---
 
