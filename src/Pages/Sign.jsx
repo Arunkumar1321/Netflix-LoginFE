@@ -46,11 +46,11 @@ const Sign = () => {
     }
    
     return(
-        <div className="w-full h-full overflow-hidden">
+        <div className="w-full min-h-screen overflow-hidden">
         <Backimage/>
         <Overlay/>
         <Netflixlogo/>
-     <div className="w-screen h-screen flex items-center justify-center">
+     <div className="w-full min-h-screen flex items-center justify-center">
         <div className="bg-black p-5 px-20 rounded-2xl absolute top-52 z-20  font-netflix " style={{width:"450px",height:"600px"}} >
            <h1 className="text-white text-4xl font-bold my-8">Sign Up</h1>
            <input value={user} onChange={(e)=>setuser(e.target.value)} type="text" placeholder="Email or phone number" className="bg-[#333333] text-white placeholder:text-gray-500 border-none focus:outline-none p-4 w-full cursor-pointer rounded-md my-2"></input>
