@@ -42,12 +42,12 @@ const Loginnew = ()=>{
 
     return(
         <div className="w-full h-full flex items-center justify-center">
-        <div className="bg-black p-5 px-20 rounded-2xl absolute top-52 z-20  font-netflix " style={{width:"450px",height:"600px"}} >
+        <div className="bg-black p-5 px-20 rounded-2xl absolute top-52 z-20  font-netflix " style={{width:"450px",height:"500px"}} >
            <h1 className="text-white text-4xl font-bold my-8">Log in</h1>
            <input value={user} onChange={(e)=>setuser(e.target.value)} type="text" placeholder="Email or phone number" className="bg-[#333333] text-white placeholder:text-gray-500 border-none focus:outline-none p-4 w-full cursor-pointer rounded-md my-2"></input>
             <input value={password} onChange={(e)=>setpassword(e.target.value)} type="password" placeholder="Password" className="bg-[#333333] text-white placeholder:text-gray-500 border-none focus:outline-none p-4 w-full cursor-pointer rounded-md my-2"></input>
            <button onClick={handlelogin} className="bg-red-600 text-white font-bold py-3 w-full rounded-md my-8 cursor-pointer hover:bg-red-700 duration-100">Log In</button>
-           <div className=" relative top-28 flex flex-col gap-4">
+           <div className="  flex flex-col gap-4">
             <p className="text-gray-400 cursor-pointer hover:underline">Log in with Facebook</p>
             <p className="text-gray-500">New to Netflix? <span className="text-white cursor-pointer hover:underline"> <Link to="/sign">Sign up now.</Link></span></p>
            </div>
