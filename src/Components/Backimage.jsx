@@ -1,6 +1,9 @@
 import bg from "../asset/Netflix_bg.jpg"
 const Backimage = () => {
-          <div className="fixed inset-0 -z-10">
-            <img src={bg} alt="Netflix Background" className="w-full h-full object-cover" />
-        </div>}
+    return(
+        <div className="w-full fixed -z-10">
+            <img src={bg} alt="netflix background" className="w-full object-cover"></img>
+        </div>
+    )
+}
 export default Backimage;
