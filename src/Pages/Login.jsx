@@ -4,7 +4,7 @@ import Overlay from "../Components/Overlay";
 import Backimage from "../Components/Backimage";
 const Login = () => {
     return(
-        <div className="w-screen h-screen overflow-hidden">
+        <div className="w-full h-full overflow-hidden">
         <Netflixlogo/>
         <Overlay />
         <Backimage />

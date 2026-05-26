@@ -1,6 +1,6 @@
 const Overlay = () => {
     return (
-        <div className="md:absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-10"></div>
+        <div className="fixed inset-0 w-full h-full bg-black opacity-50 -z-10"></div>
     );
 };
 
