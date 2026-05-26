@@ -13,7 +13,7 @@ const Tvshows = ()=>{
             <h1 className="text-3xl font-bold text-white ">Tv Shows</h1>
         
         <div>
-            <div className="md:flex overflow-x-scroll  gap-3 cursor-pointer" style={{scrollbarWidth:"none",msOverflowStyle:"none"}}>
+            <div className="flex overflow-x-scroll  gap-3 cursor-pointer" style={{scrollbarWidth:"none",msOverflowStyle:"none"}}>
                 <img src={T1} alt="Tv Show 1" className="w-48 h-64 rounded-lg object-cover m-2 shrink-0 "/>
                 <img src={T2} alt="Tv Show 2" className="w-48 h-64 rounded-lg object-cover m-2 shrink-0 "/>
                 <img src={T3} alt="Tv Show 3" className="w-48 h-64 rounded-lg object-cover m-2 shrink-0"/>

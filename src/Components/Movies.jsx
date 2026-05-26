@@ -13,7 +13,7 @@ const Movies = ()=>{
                 <h1 className="text-3xl font-bold text-white ">Movies</h1>
             
             <div>
-                <div className="md:flex overflow-x-scroll  gap-3 cursor-pointer" style={{scrollbarWidth:"none",msOverflowStyle:"none"}}>
+                <div className="flex overflow-x-scroll  gap-3 cursor-pointer" style={{scrollbarWidth:"none",msOverflowStyle:"none"}}>
                     <img src={M1} alt="Movie 1" className="w-48 h-64 rounded-lg object-cover m-2 shrink-0 "/>
                     <img src={M2} alt="Movie 2" className="w-48 h-64 rounded-lg object-cover m-2 shrink-0 "/>
                     <img src={M3} alt="Movie 3" className="w-48 h-64 rounded-lg object-cover m-2 shrink-0"/>

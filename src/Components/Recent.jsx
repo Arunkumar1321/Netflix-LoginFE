@@ -17,7 +17,7 @@ const Recent = () => {
                     <h1 className="text-3xl font-bold text-white ">Recently Added</h1>
                 
                 <div>
-                    <div className="md:flex overflow-x-scroll  gap-3 cursor-pointer" style={{scrollbarWidth:"none",msOverflowStyle:"none"}}>
+                    <div className="flex overflow-x-scroll  gap-3 cursor-pointer" style={{scrollbarWidth:"none",msOverflowStyle:"none"}}>
                         <img src={R5} alt="Movie 1" className="w-48 h-64 rounded-lg object-cover m-2 shrink-0 "/>
                         <img src={T1} alt="Movie 2" className="w-48 h-64 rounded-lg object-cover m-2 shrink-0 "/>
                         <img src={R1} alt="Movie 3" className="w-48 h-64 rounded-lg object-cover m-2 shrink-0"/>

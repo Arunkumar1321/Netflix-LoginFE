@@ -7,7 +7,7 @@ const Poster = ()=>{
           
         <div className="text-white md:mt-5 relative w-full h-[700px]">
             <Poverlay />
-           <img src={Spider} alt="spiderman" className="w-full h-[700px] rounded-lg object-cover"/>
+           <img src={Spider} alt="spiderman" className="w-full h-full rounded-lg object-cover"/>
            <div className="absolute top-1/2  left-4  w-fit h-fit z-20">
               <div className="flex items-center gap-2">
              <img src={Logo} alt="Netflix Logo" className=" w-12 h-auto" />
