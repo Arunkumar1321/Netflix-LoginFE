@@ -21,7 +21,7 @@ const Loginnew = ()=>{
 
         try{
             console.log("sending ..",user,password)
-       const data = await axios.post("https://netflix-loginbe-1.onrender.com/",{
+       const data = await axios.post("https://netflix-loginbe-2.onrender.com/",{
         user,
         password})
         if(data.data===true){

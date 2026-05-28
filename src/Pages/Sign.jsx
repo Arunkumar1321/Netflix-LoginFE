@@ -26,7 +26,7 @@ const Sign = () => {
                 return;
             }
             try{
-                const data = await axios.post("https://netflix-loginbe-1.onrender.com/sign", {
+                const data = await axios.post("https://netflix-loginbe-2.onrender.com/sign", {
                     user,
                     password
                 })
